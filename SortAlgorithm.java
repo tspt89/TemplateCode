@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.Arrays;
 
 public abstract class SortAlgorithm{
 
@@ -12,22 +13,19 @@ public abstract class SortAlgorithm{
 		returnArray();
 	}
 
-	public abstract void sort();
-
-	protected void compare(){
-		System.out.println("Compare array");
+	public void sort(){
+		Arrays.sort(this.arr);
 	}
 
+	protected abstract void compare();
+
 	public void returnArray(){
-		System.out.println("Print array: ");
-		for(int i=0; i<arr.length; i++){
-			System.out.println(arr[i]);
-		}
+		System.out.println("Print array:");
+		
 	}
 
 	public void processArray(){
-		Scanner sc = new Scanner(System.in);
-
+		System.out.println("Process Array");
 		Random r = new Random();
 		for(int i=0; i<100; i++){
 			arr[i] = r.nextInt();

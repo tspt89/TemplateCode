@@ -1,7 +1,7 @@
-import java.util.Arrays;
+
 public class SortAscending extends SortAlgorithm{
 
-	public void sort(){
-		Arrays.sort(this.arr);
+	public void compare(){
+		System.out.println("Compare ASC");
 	}
 }
