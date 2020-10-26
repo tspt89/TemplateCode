@@ -1,3 +1,4 @@
+// @author: Theo Salvador P 
 public class Client{
 
 	public static void main(String[] args) {
@@ -5,6 +6,6 @@ public class Client{
 		sa.sortArray();
 
 		SortDescending sd = new SortDescending();
-		sa.sortArray();
+		sd.sortArray();
 	}
 }
